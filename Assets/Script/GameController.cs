@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
@@ -15,7 +14,7 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 playerPos = this.player.transform.position;
-        transform.position = new Vector3(transform.position.x, playerPos.y, transform.position.z);
+        Vector3 playerPos = player.transform.position;
+        transform.position = new Vector3(transform.position.x,playerPos.y,transform.position.z);
     }
 }
